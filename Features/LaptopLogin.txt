@@ -1,0 +1,7 @@
+If TickTick is open:
+    restores it,
+    activates it,
+    maximizes it.
+If TickTick is closed:
+    force stops it,
+    restarts it.
