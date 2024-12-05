@@ -1,0 +1,1 @@
+Open the apps/folders/sites in "Settings\List.py" according to their set dates.
