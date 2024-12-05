@@ -22,15 +22,15 @@ def openSites(theList):
     for i in theList:
         openWeb(i)
 
-def openPairedSites(theList):
-    for pair in theList:
-        openSite(pair[1])
-def openPairedFolders(theList):
-    for pair in theList:
-        openFolder(pair[1])
 def openPairedApps(theList):
     for pair in theList:
         openApp(pair[1])
+def openPairedFolders(theList):
+    for pair in theList:
+        openFolder(pair[1])
+def openPairedSites(theList):
+    for pair in theList:
+        openSite(pair[1])
 
 #function to get tick tick
 def getTickTick():
@@ -56,8 +56,9 @@ def getMsTeams():
             msTeamsWindow = getMsTeams_retry(1)
             if not msTeamsWindow:
                 msTeamsWindow = getMsTeams_retry(1)
-    msTeamsWindow = msTeamsWindow[0]
-    msTeamsWindow.maximize()
+    if msTeamsWindow:
+        msTeamsWindow = msTeamsWindow[0]
+        msTeamsWindow.maximize()
 
 #functions for LaptopStartup_Auto.py only
 def translateToQuarterlyDate(oriDate):
